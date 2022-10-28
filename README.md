@@ -5,7 +5,7 @@
 ```shell
 $ git clone https://github.com/MatataFerra/SteplixMicroservice.git
 $ npm install
-$ cd && ./crypto docker-compose up -d --build
+$ cd ./crypto && docker-compose up -d --build
 $ cd ../
 $ ./scripts/install.sh --crypto
 $ npm run dev
