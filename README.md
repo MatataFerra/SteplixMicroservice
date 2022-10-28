@@ -2,24 +2,19 @@
 
 ### Download & Install
 
-1. git clone https://github.com/MatataFerra/SteplixMicroservice.git
-2. npm install
-3. cd && ./crypto docker-compose up -d --build
-4. cd ../
-5. ./scripts/install.sh --crypto
-6. npm run dev
-7. enjoy!
+```shell
+$ git clone https://github.com/MatataFerra/SteplixMicroservice.git
+$ npm install
+$ cd && ./crypto docker-compose up -d --build
+$ cd ../
+$ ./scripts/install.sh --crypto
+$ npm run dev
+$ enjoy!
+```
 
-## Request
+## Endpoints
 
-GET /currencies
-GET /rates
-GET /rates/{symbol}
-POST /rates
-
-### POST /rates
-
-BODY
-
-- id_currency
-- value
+- `GET` [/currencies] List all currencies.
+- `GET` [/rates] List all rates.
+- `GET` [/rates/{symbol}] List currency by simbol with the last rate.
+- `POST` [/rates] Create new rate with body: id_currency, value.
